@@ -38,14 +38,17 @@ class ViewController: UIViewController {
               let url = URL.urlForWeatherAPI(city: cityEncoded) else { return }
 
         let resource = Resource<WeatherResult>(url: url)
-        URLRequest.load(resource: resource)
+        let search = URLRequest.load(resource: resource)
             .observe(on: MainScheduler.instance)
             .catchAndReturn(WeatherResult.empty)
-            .subscribe(onNext: { result in
+//            .subscribe(onNext: { result in
+//
+//            let weather = result.main
+//            self.displayWeather(weather)
+//        }).disposed(by: disposeBag)
 
-            let weather = result.main
-            self.displayWeather(weather)
-        }).disposed(by: disposeBag)
+        search.map { "\($0.main.temp) ℃" }.bind(to: self.temperatureLabel.rx.text).disposed(by: disposeBag)
+        search.map { "\($0.main.humidity) 💦" }.bind(to: self.humidityLabel.rx.text).disposed(by: disposeBag)
     }
 
     private func displayWeather(_ weather: Weather?) {
