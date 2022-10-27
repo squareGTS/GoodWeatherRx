@@ -18,6 +18,7 @@
 		517F46FD290AB3EF00BD9DF1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 517F46FC290AB3EF00BD9DF1 /* RxSwift */; };
 		517F4700290AB76300BD9DF1 /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F46FF290AB76300BD9DF1 /* WeatherResult.swift */; };
 		517F4703290AB98000BD9DF1 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F4702290AB98000BD9DF1 /* URLRequest+Extensions.swift */; };
+		517F4705290ABE9A00BD9DF1 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F4704290ABE9A00BD9DF1 /* URL+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		517F46F1290AB3C400BD9DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		517F46FF290AB76300BD9DF1 /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
 		517F4702290AB98000BD9DF1 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		517F4704290ABE9A00BD9DF1 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				517F4702290AB98000BD9DF1 /* URLRequest+Extensions.swift */,
+				517F4704290ABE9A00BD9DF1 /* URL+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				517F46E8290AB3C300BD9DF1 /* ViewController.swift in Sources */,
+				517F4705290ABE9A00BD9DF1 /* URL+Extensions.swift in Sources */,
 				517F4700290AB76300BD9DF1 /* WeatherResult.swift in Sources */,
 				517F46E4290AB3C300BD9DF1 /* AppDelegate.swift in Sources */,
 				517F4703290AB98000BD9DF1 /* URLRequest+Extensions.swift in Sources */,
